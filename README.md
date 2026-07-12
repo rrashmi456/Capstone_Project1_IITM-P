@@ -27,14 +27,7 @@ Dataset Name
       -31
 
 ## Project Workflow
-Business Understanding↓
-Data Understanding↓
-Data Cleaning↓
-EDA↓
-Feature Engineering↓
-Machine Learning↓
-Evaluation↓
-Business Recommendations
+Business Understanding-->Data Understanding-->Data Cleaning-->EDA-->Feature Engineering-->Machine Learning-->Evaluation-->Business Recommendations
 
 ## Machine Learning Models
 - Logistic Regression
