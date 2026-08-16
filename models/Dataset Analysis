@@ -1,0 +1,197 @@
+Dataset loaded successfully!
+Shape: (50500, 31)
+
+First 5 records:
+   patient_id  age gender        bmi smoking_status  diabetes_flag  \
+0      100000   69   Male  30.077885          Never              0   
+1      100001   32   Male  22.247688        Current              1   
+2      100002   89   Male  29.735513          Never              0   
+3      100003   78   Male  35.185393        Current              1   
+4      100004   38   Male  33.664362          Never              0   
+
+   hypertension_flag  heart_disease_flag  chronic_conditions_count  \
+0                  1                   1                         1   
+1                  1                   0                         1   
+2                  1                   0                         3   
+3                  1                   1                         1   
+4                  0                   0                         2   
+
+   previous_admissions_12m  ...  followup_scheduled_flag  \
+0                        3  ...                        1   
+1                        1  ...                        1   
+2                        2  ...                        1   
+3                        0  ...                        0   
+4                        0  ...                        1   
+
+   discharge_destination  patient_education_score  insurance_type  \
+0       Nursing Facility                 7.602367         Private   
+1         Other Hospital                 7.677649         Private   
+2         Other Hospital                 9.129235      Government   
+3       Nursing Facility                 6.226606      Government   
+4                   Home                 6.716954         Private   
+
+   treatment_cost  legacy_record_id  billing_reference_number  \
+0    64737.427706            425139                    778850   
+1    90632.466302            808373                    642503   
+2    70890.687665            853147                    966882   
+3    54818.805239            807479                    276000   
+4    31738.214081            724743                    295163   
+
+   care_cluster_id  administrative_batch_id  readmission_flag  
+0               21                     8300                 0  
+1               69                     1892                 0  
+2               36                     8529                 0  
+3               13                     4994                 1  
+4               20                     6748                 0  
+
+[5 rows x 31 columns]
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 50500 entries, 0 to 50499
+Data columns (total 31 columns):
+ #   Column                          Non-Null Count  Dtype  
+---  ------                          --------------  -----  
+ 0   patient_id                      50500 non-null  int64  
+ 1   age                             50500 non-null  int64  
+ 2   gender                          50500 non-null  object 
+ 3   bmi                             50500 non-null  float64
+ 4   smoking_status                  50500 non-null  object 
+ 5   diabetes_flag                   50500 non-null  int64  
+ 6   hypertension_flag               50500 non-null  int64  
+ 7   heart_disease_flag              50500 non-null  int64  
+ 8   chronic_conditions_count        50500 non-null  int64  
+ 9   previous_admissions_12m         50500 non-null  int64  
+ 10  length_of_stay_days             50500 non-null  int64  
+ 11  icu_admission_flag              50500 non-null  int64  
+ 12  emergency_admission_flag        50500 non-null  int64  
+ 13  number_of_procedures            50500 non-null  int64  
+ 14  blood_glucose                   50500 non-null  float64
+ 15  cholesterol_level               45364 non-null  float64
+ 16  hemoglobin                      45443 non-null  float64
+ 17  creatinine                      50500 non-null  float64
+ 18  medications_count               50500 non-null  int64  
+ 19  high_risk_medication_flag       50500 non-null  int64  
+ 20  medication_changes_during_stay  50500 non-null  int64  
+ 21  followup_scheduled_flag         50500 non-null  int64  
+ 22  discharge_destination           50500 non-null  object 
+ 23  patient_education_score         50500 non-null  float64
+ 24  insurance_type                  50500 non-null  object 
+ 25  treatment_cost                  50500 non-null  float64
+ 26  legacy_record_id                50500 non-null  int64  
+ 27  billing_reference_number        50500 non-null  int64  
+ 28  care_cluster_id                 50500 non-null  int64  
+ 29  administrative_batch_id         50500 non-null  int64  
+ 30  readmission_flag                50500 non-null  int64  
+dtypes: float64(7), int64(20), object(4)
+memory usage: 11.9+ MB
+None
+          patient_id           age           bmi  diabetes_flag  \
+count   50500.000000  50500.000000  50500.000000   50500.000000   
+mean   124997.002455     53.378416     27.058083       0.298733   
+std     14438.162760     20.793392      5.868455       0.457707   
+min    100000.000000     18.000000     15.000000       0.000000   
+25%    112484.750000     35.000000     22.980879       0.000000   
+50%    124998.500000     53.000000     27.003718       0.000000   
+75%    137504.250000     71.000000     31.054301       1.000000   
+max    149999.000000     89.000000     50.399782       1.000000   
+
+       hypertension_flag  heart_disease_flag  chronic_conditions_count  \
+count       50500.000000        50500.000000              50500.000000   
+mean            0.401901            0.201347                  1.990634   
+std             0.490287            0.401010                  1.411625   
+min             0.000000            0.000000                  0.000000   
+25%             0.000000            0.000000                  1.000000   
+50%             0.000000            0.000000                  2.000000   
+75%             1.000000            0.000000                  3.000000   
+max             1.000000            1.000000                 11.000000   
+
+       previous_admissions_12m  length_of_stay_days  icu_admission_flag  ...  \
+count             50500.000000         50500.000000        50500.000000  ...   
+mean                  1.003525             9.980515            0.151149  ...   
+std                   1.002219             5.470321            0.358197  ...   
+min                   0.000000             1.000000            0.000000  ...   
+25%                   0.000000             5.000000            0.000000  ...   
+50%                   1.000000            10.000000            0.000000  ...   
+75%                   2.000000            15.000000            0.000000  ...   
+max                   8.000000            19.000000            1.000000  ...   
+
+       high_risk_medication_flag  medication_changes_during_stay  \
+count               50500.000000                    50500.000000   
+mean                    0.203089                        2.000040   
+std                     0.402302                        1.405083   
+min                     0.000000                        0.000000   
+25%                     0.000000                        1.000000   
+50%                     0.000000                        2.000000   
+75%                     0.000000                        3.000000   
+max                     1.000000                       12.000000   
+
+       followup_scheduled_flag  patient_education_score  treatment_cost  \
+count             50500.000000             50500.000000    5.050000e+04   
+mean                  0.697584                 5.493336    6.997443e+04   
+std                   0.459309                 2.592939    4.450957e+05   
+min                   0.000000                 1.000148    2.352309e+03   
+25%                   0.000000                 3.236984    3.384340e+04   
+50%                   1.000000                 5.503930    4.685634e+04   
+75%                   1.000000                 7.738922    6.298425e+04   
+max                   1.000000                 9.999477    1.000000e+07   
+
+       legacy_record_id  billing_reference_number  care_cluster_id  \
+count      50500.000000              50500.000000     50500.000000   
+mean      549670.957505             550165.528733        50.101485   
+std       260109.592374             260153.391860        28.531008   
+min       100000.000000             100002.000000         1.000000   
+25%       323458.750000             323993.750000        25.000000   
+50%       550374.500000             550020.000000        50.000000   
+75%       774110.250000             774688.750000        75.000000   
+max       999985.000000             999996.000000        99.000000   
+
+       administrative_batch_id  readmission_flag  
+count             50500.000000      50500.000000  
+mean               5506.970792          0.346752  
+std                2601.246726          0.475941  
+min                1000.000000          0.000000  
+25%                3241.000000          0.000000  
+50%                5516.000000          0.000000  
+75%                7761.000000          1.000000  
+max                9998.000000          1.000000  
+
+[8 rows x 27 columns]
+patient_id                           0
+age                                  0
+gender                               0
+bmi                                  0
+smoking_status                       0
+diabetes_flag                        0
+hypertension_flag                    0
+heart_disease_flag                   0
+chronic_conditions_count             0
+previous_admissions_12m              0
+length_of_stay_days                  0
+icu_admission_flag                   0
+emergency_admission_flag             0
+number_of_procedures                 0
+blood_glucose                        0
+cholesterol_level                 5136
+hemoglobin                        5057
+creatinine                           0
+medications_count                    0
+high_risk_medication_flag            0
+medication_changes_during_stay       0
+followup_scheduled_flag              0
+discharge_destination                0
+patient_education_score              0
+insurance_type                       0
+treatment_cost                       0
+legacy_record_id                     0
+billing_reference_number             0
+care_cluster_id                      0
+administrative_batch_id              0
+readmission_flag                     0
+dtype: int64
+readmission_flag
+0    32989
+1    17511
+Name: count, dtype: int64
+readmission_flag
+0    65.324752
+1    34.675248
+Name: proportion, dtype: float64
